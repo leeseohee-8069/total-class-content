@@ -1,0 +1,60 @@
+<!-- HTML불편함2.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* body {
+        background-color: black;
+        color: white;
+      } */
+    </style>
+  </head>
+  <body>
+    <h2>새로고침 문제!</h2>
+    <p>내가 페이지를 만들면 열리는건 문제 없음</p>
+    <p>새로 고침을 하면 화면이 전체 다시 로딩된다.</p>
+    <p>
+      새로고침이 되면 기존 콘솔 내용들도 지워지고 크롬(브라우저) 내 html파일을
+      위에서 부터 아래 다시 읽어서 화면에 띄워준다.
+    </p>
+    <p>새로고침이 되면 화면이 깜빡거린다!</p>
+    <p>
+      태그들이 많거나 이미지가 많으면 깜빡거리고 로딩되는 시간이 길어서 빈
+      페이지가 보일 수있다.
+    </p>
+
+    <h2>새로고침 문제 - 안 좋은 예</h2>
+
+    <p>댓글을 입력하고 등록 버튼을 눌러보세요.</p>
+    <p>화면이 전체 새로고침됩니다.</p>
+
+    <!-- form은 기본적으로 submit하면 페이지를 새로고침함 -->
+    <form>
+      <input type="text" placeholder="댓글 입력" />
+      <button type="submit">댓글 등록</button>
+    </form>
+
+    <div class="box">
+      <h3>댓글 목록</h3>
+      <p>아직 댓글이 없습니다.</p>
+    </div>
+
+    <h3>프로젝트 기본 설정을 자동으로 만들어준다</h3>
+    <p>일일이 하나씩 폴더 만들어서 기본 세팅하고 있다.</p>
+  </body>
+</html>
+<!-- 
+  글 작성
+ ↓
+등록 버튼
+ ↓
+서버 이동
+ ↓
+페이지 새로고침
+ ↓
+결과 화면
+ -->
